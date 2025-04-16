@@ -1,20 +1,30 @@
 ﻿using System;
-using System.Diagnostics;
+namespace task5; 
 
-namespace Task3;
 class program
 {
-    static void Main(string[]args)
+    static void Main(string[] args)
     {
-        int a = 10;
-        int b = 20;
-        int c = 30;
-        int d = 50;
+        string Fname = "REMSHA";
+        string Sname = "TARIQ";
+        {
+            Console.WriteLine(Fname + Sname);
+        }
+        string fullname = Fname + Sname;
 
-        int maxvalue = Math.Max(Math.Max(a, b), Math.Max(c, d));
-        int minvalue = Math.Min(Math.Min(a, b), Math.Min(c, d));
-        Console.WriteLine("Maxvalue" + maxvalue);
-        Console.WriteLine("Minvalue" + minvalue);
-
+        {
+            Console.WriteLine(fullname);
+            Console.WriteLine(fullname.ToUpper());
+            Console.WriteLine(fullname.ToLower());
+            Console.WriteLine(fullname.IndexOf('R'));
+        }
+        String str = "ABCD";
+        {
+            Console.WriteLine(str[0]);
+            Console.WriteLine(str[1]);
+            Console.WriteLine(str[2]);
+            Console.WriteLine(str[3]);
+        }
+        Console.WriteLine(str.Length);
     }
 }
